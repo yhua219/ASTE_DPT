@@ -1,2 +1,0 @@
-# DPT
-Data annotation tool
