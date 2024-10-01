@@ -793,7 +793,7 @@
                 const currCategory = this.item.hasOwnProperty('category')? this.item.category.split("-")[0]: null;
                 const currSubCategory = this.item.hasOwnProperty('category')? this.item.category.split("-")[1]: null;
 
-                console.log(".........", this.item);
+                // console.log(".........", this.item);
 
                 // Popover content 'container' to be rendered properly via popoverTemplateCompiler
                 const popoverContent = document.createElement('div');
@@ -1096,13 +1096,11 @@
             rightClickSelectHandler(event){
                 const id = event.target.id;
                 if (id === 'rightClick_outer'){
-                    console.log("outer clicked!!!!!!!!!!!!!!")
                     this.item.categorised = false;
                     this.popoverInUse = true;
                 } else if (id === 'rightClick_inner'){
                     this.item['category'] = `${document.getElementById('rightClick_outer').value}-${document.getElementById('rightClick_inner').value}`;
                     this.item['categorised'] = true;
-                    console.log("submitted!~!!!!", this.item.category, this.item.categorised);
                     this.closePopover();
                 }
             },
