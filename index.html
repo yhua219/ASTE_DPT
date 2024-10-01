@@ -891,10 +891,15 @@
                             opinionClicked: false,
                             aspectClicked: false,
                             sentimentClicked: false,
+                            // aspectCategory: {
+                            //     'Course': ['Design', 'Content', 'Assessment', 'Pace', 'Difficulty'],
+                            //     'Staff': ['Teaching skill', 'Knowledge', 'Helpfulness'],
+                            //     'General': ['Facilities', 'Support & information', 'Services', 'Social engagement']
+                            // },
                             aspectCategory: {
-                                'Course': ['Design', 'Content', 'Assessment', 'Pace', 'Difficulty'],
-                                'Staff': ['Teaching skill', 'Knowledge', 'Helpfulness'],
-                                'General': ['Facilities', 'Support & information', 'Services', 'Social engagement']
+                                    'Course': ['Design', 'Content', 'Learning activity', 'Assessment', 'Workload', 'Difficulty', 'Technology & tools'],
+                                    'Staff': ['Teaching', 'Knowledge', 'Helpfulness', 'Attitude', 'Other'],
+                                    'General': ['Facilities', 'Support & information', 'Services', 'Social engagement', 'Overall']
                             },
                             selectedCategory: '',       // For the first select (key)
                             subcategories: [],         // Dynamically populated based on selectedCategory
